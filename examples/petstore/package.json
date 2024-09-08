@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "@typespec-ts/example-petstore",
+  "description": "An example project of typespec-ts stack",
+  "author": "Naoki Ikeguchi <me@s6n.jp>",
+  "packageManager": "pnpm@9.9.0",
+  "type": "module",
+  "tspMain": "lib/main.tsp",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@typespec-ts/adapter-express": "workspace:*",
+    "@typespec/http": "^0.59.1",
+    "@typespec/openapi": "^0.59.0",
+    "@typespec/openapi3": "^0.59.1",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@typespec-ts/emitter": "workspace:*",
+    "@typespec/compiler": "^0.59.1",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "generate": "tsp-openapi3 ./openapi.yaml --output-dir lib",
+    "compile": "tsp compile .",
+    "build": "tsc",
+    "start": "node ."
+  }
+}

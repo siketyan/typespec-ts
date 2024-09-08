@@ -1,0 +1,20 @@
+{
+  "name": "@typespec-ts/adapter-express",
+  "description": "Type-safely build HTTP endpoints with TypeSpec and Express.",
+  "author": "Naoki Ikeguchi <me@s6n.jp>",
+  "packageManager": "pnpm@9.9.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/express-serve-static-core": "^4.19.5",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@typespec-ts/emitter",
+  "description": "TypeSpec emitter for generating types",
+  "author": "Naoki Ikeguchi <me@s6n.jp>",
+  "packageManager": "pnpm@9.9.0",
+  "type": "module",
+  "tspMain": "lib/main.tsp",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "@typespec/compiler": "^0.59.1",
+    "@typespec/http": "^0.59.1",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
